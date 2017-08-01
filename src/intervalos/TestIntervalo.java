@@ -18,5 +18,11 @@ public class TestIntervalo {
         Intervalos intervalo = new Intervalos(numeros);
 		assertNotNull(numeros);
 	}
+    @Test
+	public void testExisteNumerosOrdenados() {
+		int[] numeros = {13,1,2,8,12,5};
+		int[] resultado = {1,2,5,8,12,13};
+		assertArrayEquals(resultado, numeros);
+	}
 
 }
