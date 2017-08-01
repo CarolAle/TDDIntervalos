@@ -22,7 +22,9 @@ public class TestIntervalo {
 	public void testExisteNumerosOrdenados() {
 		int[] numeros = {13,1,2,8,12,5};
 		int[] resultado = {1,2,5,8,12,13};
-		assertArrayEquals(resultado, numeros);
+		Intervalos intervalo = new Intervalos(numeros);
+		assertTrue(intervalo.getNumeros().length == 6);
+		assertArrayEquals(resultado, intervalo.getNumeros());
 	}
 
 }
