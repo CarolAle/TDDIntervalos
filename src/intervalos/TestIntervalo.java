@@ -9,7 +9,8 @@ public class TestIntervalo {
 	@Test
 	public void testTipoInt() {
 		int[] numeros = {1, 2, 3};
-		assertEquals(false, numeros);
+		boolean intervalo = new Intervalos().intervalo(numeros);
+		assertEquals(true, intervalo);
 	}
 
 }
