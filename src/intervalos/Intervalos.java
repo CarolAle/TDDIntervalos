@@ -2,8 +2,16 @@ package intervalos;
 
 
 public class Intervalos {
-public boolean intervalo(int[] numeros) {
-		return true;
+    int[] numeros;
+	private int[][] intervalos;
+	
+	public Intervalos(int[] numeros){
+		this.numeros = numeros;
+		Arrays.sort(this.numeros);
+		intervalos = new int[numeros.length][];
 	}
+	public int[] getNumeros() {
+		return numeros; 
+		}
 
 }
