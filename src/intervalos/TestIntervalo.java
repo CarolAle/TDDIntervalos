@@ -12,5 +12,10 @@ public class TestIntervalo {
 		Intervalos intervalo = new Intervalos(numeros);
 		assertTrue(intervalo.getNumeros() != null);
 	}
+    @Test
+	public void testNotNull() {
+		int[] numeros = null;
+		assertNotNull(numeros);
+	}
 
 }
