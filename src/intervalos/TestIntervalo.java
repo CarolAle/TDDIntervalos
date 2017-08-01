@@ -14,7 +14,8 @@ public class TestIntervalo {
 	}
     @Test
 	public void testNotNull() {
-		int[] numeros = null;
+		int[] numeros = {};
+        Intervalos intervalo = new Intervalos(numeros);
 		assertNotNull(numeros);
 	}
 
